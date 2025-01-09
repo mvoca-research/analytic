@@ -5,84 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVoca Research - Analytics</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9fafb;
             color: #333;
+            line-height: 1.6;
         }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Styling */
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 1rem;
+            padding: 2rem 1rem;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
         }
         header p {
             margin: 0.5rem 0 0;
+            font-size: 1.2rem;
         }
+
+        /* Main Content Styling */
         main {
-            padding: 1rem;
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #222;
+        }
+
+        /* Repository List Styling */
         .repo-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
+            gap: 1.5rem;
         }
         .repo {
             background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .repo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         .repo h2 {
             font-size: 1.5rem;
-            margin: 0;
+            margin: 0 0 0.5rem;
         }
         .repo p {
             margin: 0.5rem 0;
-            font-size: 0.9rem;
-            color: #666;
+            color: #555;
         }
+        .repo strong {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1rem 0;
+            padding: 1.5rem 1rem;
             margin-top: 2rem;
+        }
+        footer p {
+            margin: 0.5rem 0;
         }
         footer a {
             color: #4CAF50;
-            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>MVoca Research - Analytics</h1>
-        <p>Exploring analytics and innovation in research.</p>
+        <h1>MVoca Research</h1>
+        <p>Advancing analytics and AI innovation in research.</p>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <h2>Our Repositories</h2>
+        <h2>Our Featured Repositories</h2>
         <div class="repo-list">
+            <!-- Repository 1 -->
             <div class="repo">
-                <h2><a href="https://github.com/mvoca-research/Llama-3.2-11B-Vision-Instruct" target="_blank">Llama-3.2-11B-Vision-Instruct</a></h2>
-                <p>Llama 3.2 11B Vision Instruct model is part of Meta's latest series of large language models that introduce significant advancements in multimodal AI capabilities, allowing for both text and image inputs.</p>
-                <p><strong>Language:</strong> Python</p>
+                <h2><a href="https://github.com/mvoca-research/Llama-3.2-11B-Vision-Instruct" target="_blank">Llama 3.2 - Vision Instruct</a></h2>
+                <p>Llama 3.2 11B Vision Instruct model introduces significant advancements in multimodal AI capabilities, allowing for both text and image inputs.</p>
+                <strong>Language: Python</strong>
             </div>
+
+            <!-- Repository 2 -->
             <div class="repo">
-                <h2><a href="https://github.com/mvoca-research/inferless-onboarding" target="_blank">inferless-onboarding</a></h2>
-                <p>GPT-Neo 125M is a transformer model designed using EleutherAI's replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 125M represents the number of parameters of this particular pre-trained model.</p>
-                <p><strong>Language:</strong> Python</p>
+                <h2><a href="https://github.com/mvoca-research/inferless-onboarding" target="_blank">GPT-Neo 125M</a></h2>
+                <p>GPT-Neo 125M is a transformer model designed using EleutherAI's replication of the GPT-3 architecture with 125M parameters.</p>
+                <strong>Language: Python</strong>
             </div>
         </div>
     </main>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 MVOCA Research. All Rights Reserved. | <a href="https://github.com/mvoca-research">GitHub</a></p>
+        <p>&copy; 2025 MVoca Research. All Rights Reserved.</p>
+        <p><a href="https://github.com/mvoca-research" target="_blank">Visit our GitHub</a></p>
     </footer>
 </body>
 </html>
